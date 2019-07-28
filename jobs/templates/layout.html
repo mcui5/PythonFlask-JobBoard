@@ -4,13 +4,10 @@
 <html>
   <head>
     <title>Job Board</title>
-    <!-- defining it as css file / stylesheet {{}} is called a mustache template markup
-        it is used to expand tags in a template
-        my understanding: it expands the url-->
-    <link rel = "stylesheet" href = "{{url_for('static', filename = 'css/bulma.min.css')}}">
-    <link rel = "stylesheet" href = "{{ url_for('static', filename = 'css/app.css')}}">
-    <link rel = "stylesheet" href = "https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bulma.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/app.css')}}">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
   </head>
   <body>
     <div class="container top">
